@@ -1,0 +1,18 @@
+Regular Expression for Email
+[a-zA-z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+
+
+Regular Expression for Phone Number
+\+998-\d{2}-\d{3}-\d{4}$
+
+Regular Expression for removing spaces
+preg_replace("/\s+/", "", $text)."\n";
+
+PHP script for removing non-numeric characters except dot and comma
+preg_replace("/[^0-9,.]/", "", $text)."\n";
+
+PHP script for removing new lines
+preg_replace("/\s+/", "", trim($text))."\n";
+
+PHP script for extracting text
+preg_match("/\[(.*?)\]/", $text, $match);
+print $match[1]."\n";
